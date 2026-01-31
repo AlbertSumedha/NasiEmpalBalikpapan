@@ -74,7 +74,7 @@ h1, h2, h3 { font-family: 'Merriweather', serif; color: var(--primary-color); }
 /* ================= HERO STYLE ================= */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images.jpg'); /* Pastikan home.jpg di folder public */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images.jpeg'); /* Pastikan home.jpg di folder public */
   background-size: cover;
   background-position: center;
   display: flex;
