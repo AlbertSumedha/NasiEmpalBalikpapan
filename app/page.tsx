@@ -61,7 +61,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section id="home" className="hero">
         <h1>Kelezatan Autentik Nusantara</h1>
-        <p>Empal sapi lembut dengan rempah rahasia keluarga yang meresap sempurna. Sajian masakan Balikpapan di setiap suapan.</p>
+        <p>Empal sapi lembut dengan rempah rahasia keluarga yang meresap sempurna. Sajian rasa masakan keluarga di setiap suapan.</p>
         <Link href="https://wa.me/6285751252276" className="btn-cta">Cicipi Sekarang</Link>
       </section>
 
@@ -86,8 +86,8 @@ export default function Home() {
             </div>
             <div className="feature-card">
               <i className="fas fa-check-circle"></i>
-              <h3>100% Halal</h3>
-              <p>Diproses secara higienis dan terjamin kehalalannya.</p>
+              <h3>100% higienis</h3>
+              <p>Diproses secara higienis dan terjamin kebersihannya.</p>
             </div>
             <div className="feature-card">
               <i className="fas fa-star"></i>
