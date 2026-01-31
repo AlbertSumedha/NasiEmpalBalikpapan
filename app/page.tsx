@@ -48,7 +48,7 @@ export default function Home() {
       {/* NAVBAR */}
       <nav className={`navbar ${isShrunk ? "shrink" : ""}`}>
         <div className="nav-container">
-          <div className="logo">NASI EMPAL BP</div>
+          <div className="logo">NASI EMPAL BALIKPAPAN</div>
           <div className="nav-links">
             <Link href="#home" className={`nav-link ${activeSection === "home" ? "active" : ""}`}>Home</Link>
             <Link href="#about" className={`nav-link ${activeSection === "about" ? "active" : ""}`}>Tentang Kami</Link>
@@ -61,7 +61,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section id="home" className="hero">
         <h1>Kelezatan Autentik Nusantara</h1>
-        <p>Empal sapi lembut dengan rempah rahasia keluarga yang meresap sempurna. Sajian tradisi Balikpapan di setiap suapan.</p>
+        <p>Empal sapi lembut dengan rempah rahasia keluarga yang meresap sempurna. Sajian masakan Balikpapan di setiap suapan.</p>
         <Link href="https://wa.me/6285751252276" className="btn-cta">Cicipi Sekarang</Link>
       </section>
 
