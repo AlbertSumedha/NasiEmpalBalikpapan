@@ -48,7 +48,7 @@ export default function Home() {
       {/* NAVBAR */}
       <nav className={`navbar ${isShrunk ? "shrink" : ""}`}>
         <div className="nav-container">
-          <div className="logo">NASI EMPAL BALIKPAPAN</div>
+          <div className="logo">NASI EMPAL Ny. Lika</div>
           <div className="nav-links">
             <Link href="#home" className={`nav-link ${activeSection === "home" ? "active" : ""}`}>Home</Link>
             <Link href="#about" className={`nav-link ${activeSection === "about" ? "active" : ""}`}>Tentang Kami</Link>
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="divider reveal"></div>
           
           <div className="docs-grid">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+            {[9, 2, 3, 4, 5, 6, 7, 8].map((num) => (
               <div key={num} className="docs-item reveal">
                 <img src={`/image${num}.jpeg`} alt={`Dok ${num}`} />
               </div>
