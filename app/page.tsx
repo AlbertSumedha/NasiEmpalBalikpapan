@@ -71,7 +71,7 @@ export default function Home() {
           <h2>Kenapa Memilih Kami?</h2>
           <div className="divider"></div>
           <p className="about-text-top">
-            <strong>Nasi Empal Balikpapan</strong> menghadirkan kualitas premium. Kami menggunakan daging sapi pilihan dan rempah segar untuk memastikan setiap hidangan memiliki rasa yang tak terlupakan.
+            <strong>Nasi Empal Ny. Lika</strong> menghadirkan kualitas premium. Kami menggunakan daging sapi pilihan dan rempah segar untuk memastikan setiap hidangan memiliki rasa yang tak terlupakan.
           </p>
           <div className="about-features">
             <div className="feature-card">
@@ -109,7 +109,7 @@ export default function Home() {
               <img src="/menu.jpeg" alt="Daftar Menu Nasi Empal" />
             </div>
             <div className="menu-intro-text">
-              <h3>Sajian Autentik Balikpapan</h3>
+              <h3>Sajian Autentik Ny. Lika</h3>
               <p>Kami menghadirkan cita rasa empal sapi yang empuk dengan racikan bumbu tradisional khas Balikpapan. Dimasak dengan metode perlahan agar setiap rempah meresap sempurna.</p>
               <ul className="menu-highlights">
                 <li><i className="fas fa-check-circle"></i> Daging Sapi Pilihan Premium</li>
@@ -134,8 +134,8 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer>
-        <div className="logo">Nasi Empal Balikpapan</div>
-        <p>&copy; 2026 Nasi Empal Balikpapan. Dibuat dengan cinta untuk pecinta kuliner.</p>
+        <div className="logo">Nasi Empal Ny. Lika</div>
+        <p>&copy; 2026 Nasi Empal Ny. Lika. Dibuat dengan cinta untuk pecinta kuliner.</p>
       </footer>
 
       {/* WA FLOAT */}
