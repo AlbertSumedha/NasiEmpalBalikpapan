@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nasi Empal Balikpapan - Warisan Rasa Otentik",
-  description: "Sajian tradisi Balikpapan di setiap suapan.",
+  title: "Nasi Empal Ny. Lika - Warisan Rasa Otentik",
+  description: "Sajian cita rasa nusantara di setiap suapan.",
 };
 
 export default function RootLayout({
