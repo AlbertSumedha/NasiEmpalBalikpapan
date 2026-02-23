@@ -71,7 +71,6 @@ export default function Home() {
           <h2>Kenapa Memilih Kami?</h2>
           <div className="divider"></div>
           <p className="about-text-top">
-            <strong>Nasi Empal Ny. Lika</strong> menghadirkan kualitas premium. Kami menggunakan daging sapi pilihan dan rempah segar untuk memastikan setiap hidangan memiliki rasa yang tak terlupakan.
           </p>
           <div className="about-features">
             <div className="feature-card">
