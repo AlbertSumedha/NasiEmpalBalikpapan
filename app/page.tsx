@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
   const [isShrunk, setIsShrunk] = useState(false);
@@ -40,19 +39,19 @@ export default function Home() {
 
   const menuItems = [
     {
-      src: "/Nasi Empal.jpeg",
+      src: "/Nasi_Empal.jpeg",
       name: "Nasi Empal",
       desc: "Empal sapi lembut dengan bumbu rempah khas, disajikan di atas daun pisang dengan lalapan segar.",
       badge: "Favorit",
     },
     {
-      src: "/Nasi Sop Empal.jpeg",
+      src: "/Nasi_Sop_Empal.jpeg",
       name: "Nasi Sop Empal",
       desc: "Kuah sop hangat berpadu empal sapi, sayuran segar, dan sambal pedas yang menggugah selera.",
       badge: "Terlaris",
     },
     {
-      src: "/Nasi Empal Penyet.jpeg",
+      src: "/Nasi_Empal_Penyet.jpeg",
       name: "Nasi Empal Penyet",
       desc: "Empal penyet dengan sambal terasi segar, tempe, tahu, dan pelengkap yang melimpah.",
       badge: "Pedas",
@@ -1046,11 +1045,6 @@ export default function Home() {
               <p>
                 Nasi Empal Ny. Lika hadir membawa cita rasa otentik empal sapi yang telah diwariskan turun-temurun. Setiap hidangan kami dimasak perlahan menggunakan bumbu rempah pilihan tanpa pengawet, menghadirkan tekstur daging yang empuk dan rasa yang kaya di setiap suapan.
               </p>
-              <div className="stat-row">
-                <div className="stat-item"><strong>38+</strong><span>Tahun Berdiri</span></div>
-                <div className="stat-item"><strong>1000+</strong><span>Pelanggan Setia</span></div>
-                <div className="stat-item"><strong>100%</strong><span>Bahan Alami</span></div>
-              </div>
             </div>
             <div className="about-image-wrap">
               <img src="/image2.jpeg" alt="Sajian Nasi Empal Ny. Lika" />
@@ -1181,13 +1175,7 @@ export default function Home() {
       <Link href="https://wa.me/6285751252276" className="wa-float" target="_blank" title="Chat via WhatsApp">
         <span className="wa-label">Pesan sekarang?</span>
         <div className="wa-btn">
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-            alt="WhatsApp"
-            width={30}
-            height={30}
-            style={{ display: "block" }}
-          />
+          <i className="fab fa-whatsapp" style={{ fontSize: "1.6rem", lineHeight: 1 }}></i>
         </div>
       </Link>
     </>
