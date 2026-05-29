@@ -39,19 +39,19 @@ export default function Home() {
 
   const menuItems = [
     {
-      src: "/Nasi Empal.jpeg",
+      src: "/Nasi_Empal.jpeg",
       name: "Nasi Empal",
       desc: "Empal sapi lembut dengan bumbu rempah khas, disajikan di atas daun pisang dengan lalapan segar.",
       badge: "Favorit",
     },
     {
-      src: "/Nasi Sop Empal.jpeg",
+      src: "/Nasi_Sop_Empal.jpeg",
       name: "Nasi Sop Empal",
       desc: "Kuah sop hangat berpadu empal sapi, sayuran segar, dan sambal pedas yang menggugah selera.",
       badge: "Terlaris",
     },
     {
-      src: "/Nasi Empal Penyet.jpeg",
+      src: "/Nasi_Empal_Penyet.jpeg",
       name: "Nasi Empal Penyet",
       desc: "Empal penyet dengan sambal terasi segar, tempe, tahu, dan pelengkap yang melimpah.",
       badge: "Pedas",
@@ -907,15 +907,16 @@ export default function Home() {
         .footer-links a:hover { color: var(--gold-light); }
 
         /* ── WA FLOAT ── */
-        .wa-float {
+       .wa-float {
           position: fixed;
-          bottom: 32px; right: 32px;
+          bottom: 28px;
+          right: max(24px, env(safe-area-inset-right));
           display: flex;
           align-items: center;
           gap: 10px;
           text-decoration: none;
-          z-index: 999;
-        }
+          z-index: 9999;
+    }
         .wa-label {
           font-size: 0.78rem;
           font-weight: 500;
@@ -985,10 +986,35 @@ export default function Home() {
 
       {/* MOBILE DRAWER */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-        <Link href="#home" className={`nav-link ${activeSection === "home" ? "active" : ""}`} onClick={handleNavClick}>Home</Link>
-        <Link href="#about" className={`nav-link ${activeSection === "about" ? "active" : ""}`} onClick={handleNavClick}>Tentang Kami</Link>
-        <Link href="#gallery" className={`nav-link ${activeSection === "gallery" ? "active" : ""}`} onClick={handleNavClick}>Menu & Galeri</Link>
-        <Link href="https://wa.me/6285751252276" target="_blank" className="nav-btn" onClick={handleNavClick}>Pesan Sekarang</Link>
+        <Link
+          href="#home"
+          className={`nav-link ${activeSection === "home" ? "active" : ""}`}
+          onClick={handleNavClick}
+        >
+          Home
+        </Link>
+        <Link
+          href="#about"
+          className={`nav-link ${activeSection === "about" ? "active" : ""}`}
+          onClick={handleNavClick}
+        >
+          Tentang Kami
+        </Link>
+        <Link
+          href="#gallery"
+          className={`nav-link ${activeSection === "gallery" ? "active" : ""}`}
+          onClick={handleNavClick}
+        >
+          Menu & Galeri
+        </Link>
+        <Link
+          href="https://wa.me/6285751252276"
+          target="_blank"
+          className="nav-btn"
+          onClick={handleNavClick}
+        >
+          Pesan Sekarang
+        </Link>
       </div>
 
       {/* NAVBAR */}
@@ -999,17 +1025,40 @@ export default function Home() {
             <span>Balikpapan</span>
           </Link>
           <div className="nav-links">
-            <Link href="#home" className={`nav-link ${activeSection === "home" ? "active" : ""}`}>Home</Link>
-            <Link href="#about" className={`nav-link ${activeSection === "about" ? "active" : ""}`}>Tentang Kami</Link>
-            <Link href="#gallery" className={`nav-link ${activeSection === "gallery" ? "active" : ""}`}>Menu & Galeri</Link>
-            <Link href="https://wa.me/6285751252276" target="_blank" className="nav-btn">Pesan Sekarang</Link>
+            <Link
+              href="#home"
+              className={`nav-link ${activeSection === "home" ? "active" : ""}`}
+            >
+              Home
+            </Link>
+            <Link
+              href="#about"
+              className={`nav-link ${activeSection === "about" ? "active" : ""}`}
+            >
+              Tentang Kami
+            </Link>
+            <Link
+              href="#gallery"
+              className={`nav-link ${activeSection === "gallery" ? "active" : ""}`}
+            >
+              Menu & Galeri
+            </Link>
+            <Link
+              href="https://wa.me/6285751252276"
+              target="_blank"
+              className="nav-btn"
+            >
+              Pesan Sekarang
+            </Link>
           </div>
           <button
             className={`hamburger ${menuOpen ? "open" : ""}`}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
-            <span></span><span></span><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
       </nav>
@@ -1018,11 +1067,28 @@ export default function Home() {
       <section id="home" className="hero">
         <div className="hero-container">
           <div className="hero-badge">Resep Warisan Keluarga</div>
-          <h1>Kelezatan<br /><em>Autentik</em><br />Nusantara</h1>
-          <p>Empal sapi lembut dengan rempah rahasia keluarga yang meresap sempurna. Sajian rasa masakan rumahan di setiap suapan.</p>
+          <h1>
+            Kelezatan
+            <br />
+            <em>Autentik</em>
+            <br />
+            Nusantara
+          </h1>
+          <p>
+            Empal sapi lembut dengan rempah rahasia keluarga yang meresap
+            sempurna. Sajian rasa masakan rumahan di setiap suapan.
+          </p>
           <div className="hero-actions">
-            <Link href="https://wa.me/6285751252276" target="_blank" className="btn-primary">Pesan Sekarang</Link>
-            <Link href="#about" className="btn-outline">Kenali Kami</Link>
+            <Link
+              href="https://wa.me/6285751252276"
+              target="_blank"
+              className="btn-primary"
+            >
+              Pesan Sekarang
+            </Link>
+            <Link href="#about" className="btn-outline">
+              Kenali Kami
+            </Link>
           </div>
         </div>
         <div className="hero-scroll">
@@ -1036,15 +1102,37 @@ export default function Home() {
         <div className="section-inner">
           <div className="reveal">
             <div className="section-label">Tentang Kami</div>
-            <h2 className="section-title">Dimasak dengan <em>Cinta,</em><br />Disajikan dengan Bangga</h2>
+            <h2 className="section-title">
+              Dimasak dengan <em>Cinta,</em>
+              <br />
+              Disajikan dengan Bangga
+            </h2>
             <div className="section-divider"></div>
           </div>
 
           <div className="about-intro reveal">
             <div className="about-text">
               <p>
-                Nasi Empal Ny. Lika hadir membawa cita rasa otentik empal sapi yang telah diwariskan turun-temurun. Setiap hidangan kami dimasak perlahan menggunakan bumbu rempah pilihan tanpa pengawet, menghadirkan tekstur daging yang empuk dan rasa yang kaya di setiap suapan.
+                Nasi Empal Ny. Lika hadir membawa cita rasa otentik empal sapi
+                yang telah diwariskan turun-temurun. Setiap hidangan kami
+                dimasak perlahan menggunakan bumbu rempah pilihan tanpa
+                pengawet, menghadirkan tekstur daging yang empuk dan rasa yang
+                kaya di setiap suapan.
               </p>
+              <div className="stat-row">
+                <div className="stat-item">
+                  <strong>38+</strong>
+                  <span>Tahun Berdiri</span>
+                </div>
+                <div className="stat-item">
+                  <strong>1000+</strong>
+                  <span>Pelanggan Setia</span>
+                </div>
+                <div className="stat-item">
+                  <strong>100%</strong>
+                  <span>Bahan Alami</span>
+                </div>
+              </div>
             </div>
             <div className="about-image-wrap">
               <img src="/image2.jpeg" alt="Sajian Nasi Empal Ny. Lika" />
@@ -1055,10 +1143,26 @@ export default function Home() {
 
           <div className="features-grid stagger-children reveal">
             {[
-              { icon: "🍽", title: "Resep Keluarga", desc: "Resep turun-temurun asli Balikpapan yang dijaga keasliannya." },
-              { icon: "🌿", title: "Bahan Alami", desc: "Daging sapi segar dan bumbu pilihan, tanpa bahan pengawet." },
-              { icon: "✓", title: "100% Higienis", desc: "Diproses secara higienis dan terjamin kebersihannya." },
-              { icon: "★", title: "Rasa Premium", desc: "Tekstur daging empuk dengan bumbu yang meresap kuat." },
+              {
+                icon: "🍽",
+                title: "Resep Keluarga",
+                desc: "Resep turun-temurun asli Balikpapan yang dijaga keasliannya.",
+              },
+              {
+                icon: "🌿",
+                title: "Bahan Alami",
+                desc: "Daging sapi segar dan bumbu pilihan, tanpa bahan pengawet.",
+              },
+              {
+                icon: "✓",
+                title: "100% Higienis",
+                desc: "Diproses secara higienis dan terjamin kebersihannya.",
+              },
+              {
+                icon: "★",
+                title: "Rasa Premium",
+                desc: "Tekstur daging empuk dengan bumbu yang meresap kuat.",
+              },
             ].map((item, i) => (
               <div key={i} className="feature-card">
                 <div className="feature-icon">{item.icon}</div>
@@ -1073,11 +1177,14 @@ export default function Home() {
       {/* MENU & GALLERY */}
       <section id="gallery" className="section menu-section">
         <div className="section-inner">
-
           {/* Menu intro */}
           <div className="reveal">
             <div className="section-label">Daftar Menu</div>
-            <h2 className="section-title">Sajian <em>Autentik</em><br />Ny. Lika</h2>
+            <h2 className="section-title">
+              Sajian <em>Autentik</em>
+              <br />
+              Ny. Lika
+            </h2>
             <div className="section-divider"></div>
           </div>
 
@@ -1087,14 +1194,22 @@ export default function Home() {
             </div>
             <div className="menu-content">
               <h3>Cita Rasa Empal yang Tak Terlupakan</h3>
-              <p>Kami menghadirkan empal sapi yang empuk dengan racikan bumbu tradisional khas Balikpapan. Dimasak dengan metode perlahan agar setiap rempah meresap sempurna ke dalam daging.</p>
+              <p>
+                Kami menghadirkan empal sapi yang empuk dengan racikan bumbu
+                tradisional khas Balikpapan. Dimasak dengan metode perlahan agar
+                setiap rempah meresap sempurna ke dalam daging.
+              </p>
               <ul className="menu-highlights">
                 <li>Daging Sapi Pilihan Premium</li>
                 <li>Tanpa Bahan Pengawet</li>
                 <li>Sambal Fresh Setiap Hari</li>
                 <li>Porsi Mengenyangkan</li>
               </ul>
-              <Link href="https://wa.me/6285751252276" target="_blank" className="menu-cta">
+              <Link
+                href="https://wa.me/6285751252276"
+                target="_blank"
+                className="menu-cta"
+              >
                 Lihat Menu Lengkap & Pesan →
               </Link>
             </div>
@@ -1103,8 +1218,13 @@ export default function Home() {
           {/* ── PHOTOCARDS ── */}
           <div className="reveal">
             <div className="photocards-label">Pilihan Menu</div>
-            <h2 className="photocards-title">Menu <em>Andalan</em> Kami</h2>
-            <p className="photocards-sub">Tiga sajian terpopuler yang selalu jadi favorit pelanggan setia kami</p>
+            <h2 className="photocards-title">
+              Menu <em>Andalan</em> Kami
+            </h2>
+            <p className="photocards-sub">
+              Tiga sajian terpopuler yang selalu jadi favorit pelanggan setia
+              kami
+            </p>
           </div>
 
           <div className="photocards-grid stagger-children reveal">
@@ -1117,7 +1237,11 @@ export default function Home() {
                 <div className="photocard-body">
                   <div className="photocard-name">{item.name}</div>
                   <p className="photocard-desc">{item.desc}</p>
-                  <Link href="https://wa.me/6285751252276" target="_blank" className="photocard-cta">
+                  <Link
+                    href="https://wa.me/6285751252276"
+                    target="_blank"
+                    className="photocard-cta"
+                  >
                     Pesan Sekarang →
                   </Link>
                 </div>
@@ -1127,13 +1251,22 @@ export default function Home() {
 
           {/* ── GALLERY ── */}
           <div className="gallery-header reveal">
-            <h2 className="gallery-title">Dokumentasi <em>Kelezatan</em></h2>
-            <p className="gallery-sub">Setiap foto menceritakan dedikasi kami terhadap kualitas dan cita rasa</p>
+            <h2 className="gallery-title">
+              Dokumentasi <em>Kelezatan</em>
+            </h2>
+            <p className="gallery-sub">
+              Setiap foto menceritakan dedikasi kami terhadap kualitas dan cita
+              rasa
+            </p>
           </div>
 
           <div className="docs-grid">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((num, i) => (
-              <div key={num} className="docs-item reveal" style={{ transitionDelay: `${i * 55}ms` }}>
+              <div
+                key={num}
+                className="docs-item reveal"
+                style={{ transitionDelay: `${i * 55}ms` }}
+              >
                 <img src={`/image${num}.jpeg`} alt={`Dokumentasi ${num}`} />
                 <div className="docs-item-overlay">
                   <div className="docs-item-overlay-icon">+</div>
@@ -1141,7 +1274,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
@@ -1149,9 +1281,14 @@ export default function Home() {
       <div className="cta-strip">
         <div className="cta-strip-inner reveal">
           <div className="cta-gold-line"></div>
-          <p>"Satu suapan, seribu kenangan — inilah rasa rumah yang sesungguhnya."</p>
+          <p>
+            "Satu suapan, seribu kenangan — inilah rasa rumah yang
+            sesungguhnya."
+          </p>
           <span className="cta-strip-author">— Ny. Lika, Pendiri</span>
-          <Link href="https://wa.me/6285751252276" target="_blank">Pesan via WhatsApp</Link>
+          <Link href="https://wa.me/6285751252276" target="_blank">
+            Pesan via WhatsApp
+          </Link>
         </div>
       </div>
 
@@ -1162,7 +1299,10 @@ export default function Home() {
             Nasi Empal Ny. Lika
             <span>Balikpapan</span>
           </div>
-          <p>&copy; 2026 Nasi Empal Ny. Lika. Dibuat dengan cinta untuk pecinta kuliner.</p>
+          <p>
+            &copy; 2026 Nasi Empal Ny. Lika. Dibuat dengan cinta untuk pecinta
+            kuliner.
+          </p>
           <div className="footer-links">
             <Link href="#home">Home</Link>
             <Link href="#about">Tentang</Link>
@@ -1172,10 +1312,23 @@ export default function Home() {
       </footer>
 
       {/* WA FLOAT */}
-      <Link href="https://wa.me/6285751252276" className="wa-float" target="_blank" title="Chat via WhatsApp">
+      <Link
+        href="https://wa.me/6285751252276"
+        className="wa-float"
+        target="_blank"
+        title="Chat via WhatsApp"
+      >
         <span className="wa-label">Pesan sekarang?</span>
         <div className="wa-btn">
-          <i className="fab fa-whatsapp" style={{ fontSize: "1.6rem", lineHeight: 1 }}></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="28"
+            height="28"
+            fill="white"
+          >
+            <path d="M16 2C8.268 2 2 8.268 2 16c0 2.47.664 4.786 1.82 6.77L2 30l7.43-1.79A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5a11.43 11.43 0 0 1-5.823-1.594l-.418-.248-4.33 1.044 1.074-4.222-.272-.433A11.47 11.47 0 0 1 4.5 16C4.5 9.649 9.649 4.5 16 4.5S27.5 9.649 27.5 16 22.351 27.5 16 27.5zm6.29-8.617c-.344-.172-2.036-1.004-2.352-1.118-.316-.115-.546-.172-.776.172-.23.344-.89 1.118-1.09 1.348-.2.23-.4.258-.744.086-.344-.172-1.452-.535-2.766-1.707-1.022-.912-1.712-2.04-1.912-2.384-.2-.344-.021-.53.15-.701.155-.154.344-.402.516-.603.172-.2.23-.344.344-.574.115-.23.058-.43-.029-.603-.086-.172-.776-1.87-1.063-2.562-.28-.672-.564-.58-.776-.59l-.66-.012c-.23 0-.603.086-.918.43-.316.344-1.204 1.176-1.204 2.867s1.233 3.326 1.405 3.555c.172.23 2.428 3.708 5.882 5.198.822.355 1.464.567 1.964.726.825.263 1.576.226 2.17.137.662-.099 2.036-.832 2.323-1.635.287-.803.287-1.492.2-1.635-.086-.143-.316-.23-.66-.402z" />
+          </svg>
         </div>
       </Link>
     </>

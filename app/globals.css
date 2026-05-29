@@ -155,13 +155,25 @@ h1, h2, h3 { font-family: 'Merriweather', serif; color: var(--primary-color); }
 
 /* ================= FOOTER & WA FLOAT ================= */
 footer { background: var(--primary-color); color: white; text-align: center; padding: 50px 20px; }
-.wa-float { 
-  position: fixed; width: 65px; height: 65px; bottom: 40px; right: 40px; 
-  background-color: #25d366; color: white; border-radius: 50%; 
-  display: flex; justify-content: center; align-items: center; font-size: 35px; 
-  z-index: 1000; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.3); transition: 0.3s; 
+.wa-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  z-index: 9999;
+
+  width: auto;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
-.wa-float:hover { transform: scale(1.1); }
+.wa-float:hover {
+  transform: none;
+}
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
