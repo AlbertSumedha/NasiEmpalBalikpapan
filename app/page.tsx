@@ -39,19 +39,19 @@ export default function Home() {
 
   const menuItems = [
     {
-      src: "/Nasi_Empal.jpeg",
+      src: "/Nasi Empal.jpeg",
       name: "Nasi Empal",
       desc: "Empal sapi lembut dengan bumbu rempah khas, disajikan di atas daun pisang dengan lalapan segar.",
       badge: "Favorit",
     },
     {
-      src: "/Nasi_Sop_Empal.jpeg",
+      src: "/Nasi Sop Empal.jpeg",
       name: "Nasi Sop Empal",
       desc: "Kuah sop hangat berpadu empal sapi, sayuran segar, dan sambal pedas yang menggugah selera.",
       badge: "Terlaris",
     },
     {
-      src: "/Nasi_Empal_Penyet.jpeg",
+      src: "/Nasi Empal Penyet.jpeg",
       name: "Nasi Empal Penyet",
       desc: "Empal penyet dengan sambal terasi segar, tempe, tahu, dan pelengkap yang melimpah.",
       badge: "Pedas",
